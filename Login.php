@@ -39,7 +39,7 @@
             <div class="illustration">
                 <h3 style="color: rgb(23,21,146);">Login</h3>
             </div>
-            <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
+            <div class="form-group"><input class="form-control" type="text" name="email" placeholder="Email"></div>
             <div class="form-group"><input class="form-control" type="password" name="pwd" placeholder="Password"></div>
             <div class="form-group"><button class="btn btn-primary btn-block" type="submit" style="background-color: rgb(21,19,133);" name='loginbtn'>Log In</button></div>
         </form>
