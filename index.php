@@ -57,6 +57,42 @@ if($_SESSION['login_user']== NULL)
 	
 	?>
 
+
+<!-- Admin user -->
+
+<?php
+if($_SESSION['login_user']== NULL)
+{?>
+
+<div>
+        <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean-button" style="background-color: rgb(0,0,0);">
+            <div class="container"><a class="navbar-brand" href="index.html" style="padding: 0px;color: rgb(23,21,146);width: 200px;">J's Electronic's &amp; More</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1" style="background-color: #171592;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav mr-auto">
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="AboutUs.php">AboutUs</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="ContactUs.php">ContactUs</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="Products.php">Products</a></li>
+                    </ul><span class="navbar-text actions"> <a class="text-primary login" href="Logout.php">Log Out</a><a class="text-primary" role="button" href="#" >Welcome <?php echo $_SESSION['login_user'];?></a></span></div>
+              </div>
+	    </nav>
+	
+
+	
+	</div>
+
+	<?php
+}
+	
+	
+	?>
+	
+
+
+
+
+
+
 <!-- Logged in user -->
 
 	<?php
