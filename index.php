@@ -29,33 +29,7 @@ session_start();
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<!-- Guest User -->
-<?php
-if($_SESSION['login_user']== NULL)
-{?>
 
-<div>
-        <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean-button" style="background-color: rgb(0,0,0);">
-            <div class="container"><a class="navbar-brand" href="index.php" style="padding: 0px;color: rgb(23,21,146);width: 200px;">J's Electronic's &amp; More</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1" style="background-color: #171592;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                <div
-                    class="collapse navbar-collapse" id="navcol-1">
-                    <ul class="nav navbar-nav mr-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="AboutUs.php">AboutUs</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="ContactUs.php">ContactUs</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="Products.php">Products</a></li>
-                    </ul><span class="navbar-text actions"> <a class="text-primary login" href="Login.php">Log In</a><a class="btn btn-light bounce animated infinite action-button" role="button" href="Register.php" style="background-color: rgb(23,21,146);">Register</a></span></div>
-              </div>
-	    </nav>
-	
-
-	
-	</div>
-
-	<?php
-}
-	
-	
-	?>
 
 
 <!-- Admin user -->
@@ -82,13 +56,6 @@ if($_SESSION['login_user']== "jelectricsAdmin")
 	
 	</div>
 
-	<?php
-}
-	
-	
-	?>
-	
-
 
 
 
@@ -96,8 +63,9 @@ if($_SESSION['login_user']== "jelectricsAdmin")
 
 <!-- Logged in user -->
 
-	<?php
-if($_SESSION['login_user']!= NULL)
+<?php
+}//end of if
+elseif($_SESSION['login_user']!= NULL)
 {?>
 
 <div>
@@ -118,10 +86,48 @@ if($_SESSION['login_user']!= NULL)
 	</div>
 
 	<?php
-}
+
+	 }//end of else if
+	 else{
 	
 	
 	?>
+	
+
+<!-- Guest User -->
+
+
+<div>
+        <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean-button" style="background-color: rgb(0,0,0);">
+            <div class="container"><a class="navbar-brand" href="index.php" style="padding: 0px;color: rgb(23,21,146);width: 200px;">J's Electronic's &amp; More</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1" style="background-color: #171592;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav mr-auto">
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="AboutUs.php">AboutUs</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="ContactUs.php">ContactUs</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="Products.php">Products</a></li>
+                    </ul><span class="navbar-text actions"> <a class="text-primary login" href="Login.php">Log In</a><a class="btn btn-light bounce animated infinite action-button" role="button" href="Register.php" style="background-color: rgb(23,21,146);">Register</a></span></div>
+              </div>
+	    </nav>
+	
+
+	
+	</div>
+
+	<?php
+} //end of else
+	
+	
+	?>
+
+
+
+
+
+
+
+
+
 	
 
 
