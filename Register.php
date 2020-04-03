@@ -35,7 +35,7 @@
     </nav>
     <div class="register-photo">
         <div class="form-container">
-            <form method="post">
+            <form method="post" action="RegisterValidate.php">
                 <h2 class="text-center"><strong>Register&nbsp;</strong>an account.</h2>
                 <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Vendor Name" required ></div>
                 <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email" required></div>
